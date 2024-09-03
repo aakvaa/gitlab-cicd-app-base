@@ -7,3 +7,9 @@ realizar_testes:
   before_script:
     - cd app/
     - npm install
+  script:
+    - npm test
+  artifacts:
+    when: always
+    reports:
+      junit: junit.xml
